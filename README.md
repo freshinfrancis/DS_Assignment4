@@ -1,6 +1,6 @@
 # DS_Assignment4
 
-##FailureHandlingTest
+## FailureHandlingTest
 Description:
 The FailureHandlingTest simulates a scenario where the server experiences unexpected disconnections. This test ensures that client applications can handle server failures gracefully and attempt reconnections or failovers as needed. It is designed to validate the reconnection logic and assess how well the system can recover from transient failures without losing data consistency.
 
@@ -12,7 +12,7 @@ Checks if clients can detect the failure, handle reconnection attempts, and resu
 Best Use Case:
 This test is ideal for systems requiring high availability and resilience, where unexpected server failures should not disrupt client functionality for long.
 
-##ScalabilityTest
+## ScalabilityTest
 Description:
 The ScalabilityTest assesses the system’s performance and stability under a high load of concurrent client requests. By simulating a growing number of client connections, this test measures how the server handles increased traffic and assesses performance metrics such as latency and throughput.
 
@@ -24,7 +24,7 @@ Logs metrics to analyze how well the system scales and maintains performance und
 Best Use Case:
 Useful for distributed systems that need to handle high volumes of concurrent users or data requests, providing insight into resource allocation and bottlenecks.
 
-##FailureToleranceTest
+## FailureToleranceTest
 Description:
 The FailureToleranceTest focuses on fault tolerance by evaluating how effectively the system maintains data integrity and consistency during a server restart. This test simulates a server failure, restarts it, and checks whether clients can seamlessly reconnect and re-upload data if needed.
 
@@ -36,7 +36,7 @@ Checks if clients automatically reconnect and whether any lost data is successfu
 Best Use Case:
 Ideal for applications where consistent data state is critical, even in case of planned or unplanned server downtime, such as financial or mission-critical systems.
 
-##LamportClockOrderTest
+## LamportClockOrderTest
 Description:
 The LamportClockOrderTest ensures that the distributed system maintains proper event ordering using Lamport clocks, a mechanism for logical ordering in distributed environments. This test validates whether the server correctly synchronizes Lamport clocks on client requests and maintains causally consistent ordering.
 
